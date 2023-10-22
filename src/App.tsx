@@ -1,16 +1,7 @@
-import { useState } from "react";
-import Button from "./components/counter/Button";
-import CounterBox from "./components/counter/CounterBox";
+import CounterComponent from "./components/counter/CounterComponent";
 
 function App() {
-  let [counter, updateCounter] = useState(0);
-
-  return (
-    <div>
-      <Button oldCounterValue={counter} updateCounter={updateCounter} />
-      <CounterBox counter={counter}></CounterBox>
-    </div>
-  );
+  return <CounterComponent />;
 }
 
 export default App;
