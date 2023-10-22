@@ -1,5 +1,3 @@
-import { ReactNode, MouseEvent } from "react";
-
 interface Props {
   oldCounterValue: number;
   updateCounter: (counter: number) => void;
