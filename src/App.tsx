@@ -1,10 +1,12 @@
+import TextField from "./components/TextField";
 import CounterComponent from "./components/counter/CounterComponent";
 import MovieTable from "./components/table/MovieTable";
 
 function App() {
   return (
     <>
-      <CounterComponent />
+      <TextField/>
+      {/* <CounterComponent />
       <MovieTable
         movieItems={[
           {
@@ -18,7 +20,7 @@ function App() {
             isAvailableForDownload: false,
           },
         ]}
-      />
+      /> */}
     </>
   );
 }

@@ -18,13 +18,19 @@ function MovieTable({ movieItems }: Props) {
           <th>Name</th>
           <th>Episode number</th>
           <th>AvailableForDownload</th>
+          <th>Status</th>
         </tr>
         {movieItems.map((val, key) => {
           return (
             <tr key={key}>
               <td>{val.movieName}</td>
               <td>{val.episodeNumber}</td>
-              <td>{val.isAvailableForDownload ? <FcOk/> : <FcCancel/>}</td>
+              <td>{val.isAvailableForDownload ? <FcOk /> : <FcCancel />}</td>
+              <td
+                style={{
+                  backgroundColor: "blue",
+                }}
+              ></td>
             </tr>
           );
         })}
